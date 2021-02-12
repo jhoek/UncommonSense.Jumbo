@@ -9,25 +9,25 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'UncommonSense.Jumbo.psm1'
+    RootModule       = 'UncommonSense.Jumbo.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '0.0.1'
+    ModuleVersion    = '0.0.1'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
 
     # ID used to uniquely identify this module
-    GUID              = '01c62374-df04-46e9-815c-ee1de52199ff'
+    GUID             = '01c62374-df04-46e9-815c-ee1de52199ff'
 
     # Author of this module
-    Author            = 'Jan Hoek'
+    Author           = 'Jan Hoek'
 
     # Company or vendor of this module
-    CompanyName       = 'uncommonsense.nl'
+    CompanyName      = 'uncommonsense.nl'
 
     # Copyright statement for this module
-    Copyright         = 'Copyright (c) 2021 Jan Hoek'
+    Copyright        = 'Copyright (c) 2021 Jan Hoek'
 
     # Description of the functionality provided by this module
     # Description = ''
@@ -63,22 +63,22 @@
     # TypesToProcess = @()
 
     # Format files (.ps1xml) to be loaded when importing this module
-    FormatsToProcess  = @('UncommonSense.Jumbo.Format.ps1xml')
+    FormatsToProcess = @('UncommonSense.Jumbo.Format.ps1xml')
 
     # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
     # NestedModules = @()
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = 'Get-JumboStore'
+    #FunctionsToExport =
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport   = '*'
+    CmdletsToExport  = 'Get-JumboStore'
 
     # Variables to export from this module
-    VariablesToExport = '*'
+    #VariablesToExport = '*'
 
     # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-    AliasesToExport   = '*'
+    #AliasesToExport   = '*'
 
     # DSC resources to export from this module
     # DscResourcesToExport = @()
@@ -90,7 +90,7 @@
     # FileList = @()
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-    PrivateData       = @{
+    PrivateData      = @{
 
         PSData = @{
 
