@@ -51,8 +51,9 @@ function Get-JumboStore
                     $ToTime = $Match.Matches[0].Groups['To'].Value
 
                     $OpeningHour = [PSCustomObject]@{
-                        From = $Date.Add($FromTime)
-                        To   = $Date.Add($ToTime)
+                        PSTypeName = 'UncommonSense.Jumbo.OpeningHours'
+                        From       = $Date.Add($FromTime)
+                        To         = $Date.Add($ToTime)
                     }
 
                     $OpeningHours += $OpeningHour
@@ -60,6 +61,7 @@ function Get-JumboStore
             }
 
             [PSCustomObject]@{
+                PSTypeName   = 'UncommonSense.Jumbo.Store'
                 Name         = $Name
                 OpeningHours = $OpeningHours
             }

@@ -1,0 +1,10 @@
+<Configuration>
+    <ViewDefinitions>
+        <View>
+            <Name>Default</Name>
+            <ViewSelectedBy>
+                <TypeName>SelectedByName</TypeName>
+            </ViewSelectedBy>
+        </View>
+    </ViewDefinitions>
+</Configuration>
