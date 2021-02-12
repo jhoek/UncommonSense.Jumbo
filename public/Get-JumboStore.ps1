@@ -62,6 +62,7 @@ function Get-JumboStore
 
             [PSCustomObject]@{
                 PSTypeName   = 'UncommonSense.Jumbo.Store'
+                ID           = $_
                 Name         = $Name
                 OpeningHours = $OpeningHours
             }
