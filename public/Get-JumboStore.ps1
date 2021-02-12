@@ -19,7 +19,7 @@ function Get-JumboStore
     process
     {
         $ID.ForEach{
-            $Content = Invoke-WebRequest -Uri "https://www.jumbo.com/winkel/$ID" | Select-Object -ExpandProperty Content
+            $Content = Invoke-WebRequest -Uri "https://www.jumbo.com/winkel/$_" | Select-Object -ExpandProperty Content
             $Name = $Content | pup 'h1 strong text{}'
             $DatesAsText = $Content | pup '.opening-hours__line .date text{}'
             $TimesAsText = $Content | pup '.opening-hours__line .time text{}'
