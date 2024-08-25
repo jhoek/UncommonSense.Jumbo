@@ -19,10 +19,11 @@ function Get-JumboStore
     process
     {
         $ID.ForEach{
-            $Content = Invoke-WebRequest -Uri "https://www.jumbo.com/winkel/$_" | Select-Object -ExpandProperty Content
-            $Name = $Content | pup 'h1 strong text{}'
-            $DatesAsText = $Content | pup '.opening-hours__line .date text{}'
-            $TimesAsText = $Content | pup '.opening-hours__line .time text{}'
+            $Document = ConvertTo-HtmlDocument -Uri "https://www.jumbo.com/winkel/$_"
+            $Name = $Document | Select-HtmlNode -CssSelector 'h1 strong' | Get-HtmlNodeText
+            $DatesAsText = $Document | Select-HtmlNode -CssSelector '.opening-hours__line .date' -All | Get-HtmlNodeText
+            $TimesAsText = $Document | Select-HtmlNode -CssSelector '.opening-hours__line .time' -All | Get-HtmlNodeText
+
             $AfterToday = $false
             $OpeningHours = @()
 
