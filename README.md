@@ -2,9 +2,6 @@
 
 PowerShell module for retrieving Jumbo store information
 
-## Dependencies
-- Relies on [pup](https://github.com/ericchiang/pup) to parse HTML.
-
 <a name="Get-JumboStore"></a>
 ## Get-JumboStore
 ### Synopsis
@@ -29,4 +26,4 @@ Get-JumboStore -ID jumbo-veenendaal-huibers, jumbo-aalsmeer-ophelialaan
 ```
 
 
-<div style='font-size:small; color: #ccc'>Generated 22-06-2021 18:34</div>
+<div style='font-size:small; color: #ccc'>Generated 29-08-2024 22:49</div>

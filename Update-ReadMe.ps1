@@ -3,6 +3,5 @@ Import-Module (Join-Path -Path $PSScriptRoot -ChildPath UncommonSense.Jumbo.psd1
 Get-Command -Module UncommonSense.Jumbo |
     Convert-HelpToMarkDown `
         -Title 'UncommonSense.Jumbo' `
-        -Preface PREFACE.md `
         -Description 'PowerShell module for retrieving Jumbo store information' |
     Out-File -FilePath (Join-Path -Path $PSScriptRoot -ChildPath README.md) -Encoding utf8
