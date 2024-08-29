@@ -56,7 +56,7 @@
                     </TableColumnHeader>
                     <TableColumnHeader>
                         <Label>Opening Hours</Label>
-                        <Width>30</Width>
+                        <Width>40</Width>
                     </TableColumnHeader>
                 </TableHeaders>
                 <TableRowEntries>
@@ -68,7 +68,7 @@
                             </TableColumnItem>
                             <TableColumnItem>
                                 <ScriptBlock>
-                            ($_.OpeningHours | Format-Table -HideTableHeaders | Out-String).Trim("`r", "`n")
+                            ($_.OpeningHours | Format-Table -HideTableHeaders -AutoSize | Out-String).Trim("`r", "`n")
                                 </ScriptBlock>
                             </TableColumnItem>
                         </TableColumnItems>
