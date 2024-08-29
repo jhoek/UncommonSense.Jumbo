@@ -5,7 +5,7 @@ PowerShell module for retrieving Jumbo store information
 <a name="Get-JumboStore"></a>
 ## Get-JumboStore
 ### Synopsis
-
+Retrieves information about Jumbo supermarkets in The Netherlands
 ### Syntax
 ```powershell
 Get-JumboStore [-ID] <string[]> [<CommonParameters>]
@@ -26,4 +26,4 @@ Get-JumboStore -ID jumbo-veenendaal-huibers, jumbo-aalsmeer-ophelialaan
 ```
 
 
-<div style='font-size:small; color: #ccc'>Generated 29-08-2024 22:49</div>
+<div style='font-size:small; color: #ccc'>Generated 29-08-2024 22:51</div>

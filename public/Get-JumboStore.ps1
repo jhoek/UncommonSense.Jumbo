@@ -1,4 +1,6 @@
 <#
+.SYNOPSIS
+Retrieves information about Jumbo supermarkets in The Netherlands
 .EXAMPLE
 Get-JumboStore -ID jumbo-veenendaal-huibers, jumbo-aalsmeer-ophelialaan
 #>
